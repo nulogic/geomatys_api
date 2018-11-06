@@ -4,9 +4,10 @@ VOLUME /tmp
 # set working directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-
+RUN ls
 # add app
 COPY . /usr/src/app
+WORKDIR /usr/src/app
 RUN ./mvnw package
 
 # expose port
