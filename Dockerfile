@@ -7,7 +7,8 @@ WORKDIR /usr/src/app
 
 # add app
 COPY . /usr/src/app
-RUN cd /usr/src/app
+RUN chmod +x mvnw
+WORKDIR /usr/src/app
 RUN ./mvnw package
 
 # expose port
