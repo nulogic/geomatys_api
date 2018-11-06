@@ -6,8 +6,10 @@ RUN mkdir -p /usr/src/app
 
 # add app
 COPY . /usr/src/app
+COPY mvnw /bin
+COPY mvnw.cmd /bin
 WORKDIR /usr/src/app
-RUN mvn package
+RUN ./mvnw package
 
 # expose port
 EXPOSE 8080
