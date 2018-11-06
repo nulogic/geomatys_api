@@ -3,13 +3,11 @@ VOLUME /tmp
 
 # set working directory
 RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
 
 # add app
 COPY . /usr/src/app
-RUN chmod +x mvnw
 WORKDIR /usr/src/app
-RUN ./mvnw package
+RUN ./mvnw.cmd package
 
 # expose port
 EXPOSE 8080
