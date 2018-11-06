@@ -7,7 +7,7 @@ RUN mkdir -p /usr/src/app
 # add app
 COPY . /usr/src/app
 WORKDIR /usr/src/app
-RUN ./mvnw.cmd package
+RUN ./mvnw package
 
 # expose port
 EXPOSE 8080
