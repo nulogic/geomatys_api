@@ -1,6 +1,5 @@
 .settings
 .vscode
-target
 .dockerignore
 .gitignore
 dockerfile
