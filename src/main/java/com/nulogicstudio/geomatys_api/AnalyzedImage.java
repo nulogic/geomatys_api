@@ -1,6 +1,6 @@
 package com.nulogicstudio.geomatys_api;
 
-import java.awt.image.BufferedImage ;
+import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
